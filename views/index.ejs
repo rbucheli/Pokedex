@@ -10,7 +10,9 @@
   <h1>Pokemon Index Page</h1>
   
 <% for(let i = 0; i < allPokemon.length; i++) { %>  
-<img src="<%= allPokemon[i].img %>"">
+  <a href="/pokemon/<%= i%>">
+  <img src="<%= allPokemon[i].img %>"">
+</a>
 <% } %>  
 
 </body>
