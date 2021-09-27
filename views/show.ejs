@@ -7,7 +7,22 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Pokedex Entry</h1>
-  
+  <h1>Pokedex</h1>
+  <h2><%= allPokemon.name %></h2>
+  <img src="<%= allPokemon.img %>"">
+  <h3>Type</h3>
+  <ul>
+    <li><%= allPokemon.type[0] %></li>
+    <li><%= allPokemon.type[1] %></li>
+  </ul>
+  <h4>Stats</h4>
+  <ul>
+
+    <li>HP: <%= allPokemon.stats.hp %></li>
+    <li>Attack: <%= allPokemon.stats.attack %></li>
+    <li>Defense: <%= allPokemon.stats.defense %></li>
+  </ul>
+
+
 </body>
 </html>
